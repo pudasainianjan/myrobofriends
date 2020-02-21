@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/App';  //father of all components
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+  //destructured because it isnt default export
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(  //three card components wrapped in single element div to return
+<App />
+, document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
